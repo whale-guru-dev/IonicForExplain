@@ -1,0 +1,34 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-content padding class="transparent-header" text-center >
+
+  <div padding style="margin-top:10%;">
+
+    <p align="center" style="font-size:35px;">Bring Along Award</p>
+    <ion-list>
+    <ion-item style="margin-top:10%;">   
+      <ion-label floating style="align-self:center;"><ion-icon name="mail"></ion-icon></ion-label>
+      <ion-label floating style="align-self:center;">Email or Username</ion-label>
+      <ion-input type="text" [(ngModel)]="userData.username" required></ion-input>
+    </ion-item>
+    <ion-item style="margin-top:5%;">
+      <ion-label floating style="align-self:center;"><ion-icon name="unlock"></ion-icon></ion-label>
+      <ion-label floating style="align-self:center;">Password</ion-label>
+      <ion-input type="password" [(ngModel)]="userData.password" required></ion-input>
+    </ion-item>
+    </ion-list>
+    <button ion-button block outline (click)="login()"  class="login-button" style="margin-top:20%;">Login</button>
+    <button ion-button block clear (click)="doFablog()"  class="fab-login-button" style="margin-top:10%;"><ion-icon name="logo-facebook"></ion-icon> Login with Facebook</button>
+  </div>
+</ion-content>
+<ion-footer>
+    <ion-toolbar class="footer">
+      <div (click)="goToRegister()">
+        <span>Don't have an account? <strong>Register here</strong>.</span>
+      </div>
+    </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,33 @@
+page-explore {
+
+    .toolbar-background {
+        background-color: #F2A207;
+      }
+      
+    ion-content {
+        background-color:#F2A207 !important;
+    }
+
+    ion-navbar ion-row {
+        margin-left:10px;margin-right: 10px;
+    }
+    ion-label{
+        margin: 0px !important;
+    }
+    button {
+        padding:0px !important;
+    }
+    button p{
+        margin: 0px !important ;
+    }
+
+    .searchbar-input{
+        border-radius:23px !important;
+    }
+    .recom h6{
+        margin:5px;
+    }
+    .recom p{
+        margin:5px;
+    }
+}

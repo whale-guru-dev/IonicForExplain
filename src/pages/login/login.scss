@@ -1,0 +1,35 @@
+
+
+page-login {
+   ion-content{
+       background-color: #F2A207 !important;
+   }
+   ion-item {
+    background-color: #F2A207 !important;
+   }
+   ion-label {
+    color:#000 !important;
+   }
+   ion-item .item-inner {
+        border-bottom: 1px solid #000000 !important;
+    }
+    .list-ios > .item-block:first-child {
+         border-top: none; 
+    }
+
+    .list-ios > .item-block:last-child, .list-ios > .item-wrapper:last-child .item-block {
+         border-bottom: none;
+    }
+    .list-md .item-input:last-child {
+        border-bottom: none;
+    }
+    .login-button {
+        border:none;
+        background-color:#ffffff;
+    }
+    .fab-login-button {
+        background-color: #1F01ED;
+        color:#FFFFFF;
+    }
+
+}

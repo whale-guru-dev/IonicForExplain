@@ -1,0 +1,21 @@
+<ion-menu [content]="content" side="right">
+        
+    <ion-content class="menu-left">
+    <!-- User profile -->
+        <div text-center padding-top padding-bottom class="primary-bg menu-left">
+            <ion-col><img class="profile-picture" src="assets/user.png"/><span class="icon-badge">4</span></ion-col>
+            <p style="font-size:20px;">Alex</p>
+            <p style="font-size:15px;"><ion-icon name="pin"></ion-icon>Antalya,Turkey</p>
+        </div>
+
+        <ion-list class="list-full-border">
+            <button ion-item  *ngFor="let page of pages" (click)="openPage(page)" [ngStyle]="{'background-color': buttonColor}">
+            <ion-icon item-left name="{{ page.icon }}"></ion-icon>
+            {{ page.title }}
+            </button>
+        </ion-list>
+    </ion-content>
+
+</ion-menu>
+
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

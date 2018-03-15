@@ -1,0 +1,42 @@
+<!--
+  Generated template for the HistoryPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header no-border>
+
+  <ion-navbar text-center>
+    <ion-row>
+      <!-- <ion-col> -->
+      <button clear ion-button left (click)="gotoSearch()">
+        <ion-icon name="search"></ion-icon>
+      </button>
+      <!-- </ion-col> -->
+      <!-- <ion-col> -->
+      <ion-title>Share My QR</ion-title>
+      <!-- </ion-col> -->
+      <!-- <ion-col> -->
+      <button ion-button menuToggle right >
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <!-- </ion-col> -->
+    </ion-row>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content text-center>
+  <div class="qr-image" >
+    <img src="{{userData.qr_path}}" >
+  </div>
+  <div class="qr-desc">
+    <div class="qr-desc-white"><p style="font-size:20px; font-weight:bold;">MERCHANTS SCAN HERE</p></div>
+    <p style="font-size:20px; font-weight:bold;">Share Referral Link to gain more rewards.</p>
+  </div>
+  <div class="qr-info">
+    <p style="font-size:20px; font-weight:bold;">{{userData.refer_link}}</p>
+  </div>
+
+</ion-content>

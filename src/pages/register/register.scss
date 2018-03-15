@@ -1,0 +1,16 @@
+page-register {
+    ion-label {font-size: 12px;}
+    .col:after {
+        content: "";
+        display: inline-block;
+        height: 100%;            /* Let it be as height as the parent */
+        vertical-align: bottom;  /* Align the element at the bottom   */
+      }
+      
+      ion-col ion-label {
+        display: inline-block;
+        vertical-align: bottom;  /* Align the element at the bottom   */
+      }
+
+      .register-button { background-color: #F2A207;}
+}

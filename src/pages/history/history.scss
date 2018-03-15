@@ -1,0 +1,39 @@
+page-history {
+
+    .toolbar-background {
+        background-color: #F2A207;
+      }
+
+    ion-content {
+        padding:0px !important;
+        background-color:#F2A207 !important;
+    }
+
+    .qr-image{
+        margin-top: 5%;
+    }
+
+    .qr-desc{
+        padding:0px !important;
+        min-height:20%;
+        background-color:#F2A207 !important;
+    }
+
+    .qr-desc .qr-desc-white{
+        padding:0px !important;
+        min-height:50%;
+        background-color:#FFFFFF !important;
+    }
+
+    .qr-info{
+        padding:0px !important;
+        min-height:20%;
+        background-color:#FFFFFF !important;
+        // vertical-align:bottom;
+    }
+
+    .qr-info p{
+        // vertical-align:middle;
+    }
+
+}

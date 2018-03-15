@@ -1,0 +1,84 @@
+<!--
+  Generated template for the RegisterPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-header no-border>
+  
+      <ion-navbar text-center>
+ 
+        </ion-navbar>
+  
+  </ion-header>
+
+<ion-content padding>
+  <div style="text-align:center;">
+      <img src="assets/logo.png" width="50%" height="15%">
+  </div>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-4>
+        <ion-label><ion-icon name="mail"></ion-icon>Email</ion-label>
+      </ion-col>
+      <ion-col col-8>
+        <ion-item>
+          <ion-input type="text" [(ngModel)]="userData.email" required></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-4>
+        <ion-label><ion-icon name="contact"></ion-icon>Username</ion-label>
+      </ion-col>
+      <ion-col>
+        <ion-item>
+          <ion-input type="text" [(ngModel)]="userData.username" required></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-4>
+        <ion-label><ion-icon name="unlock"></ion-icon>Password</ion-label>
+      </ion-col>
+      <ion-col col-8>
+        <ion-item>
+          <ion-input type="password" [(ngModel)]="userData.password" required></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col col-4>
+          <ion-label><ion-icon name="contact"></ion-icon>Family Name</ion-label>
+        </ion-col>
+        <ion-col col-8>
+          <ion-item>
+            <ion-input type="text" [(ngModel)]="userData.family_name" required></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+    <ion-row>
+      <ion-col col-4>
+        <ion-label><ion-icon name="contact"></ion-icon>Last Name</ion-label>
+      </ion-col>
+      <ion-col col-8>
+        <ion-item>
+          <ion-input type="text" [(ngModel)]="userData.last_name" required></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-4>
+        <ion-label><ion-icon name="call"></ion-icon>Mobile</ion-label>
+      </ion-col>
+      <ion-col col-8>
+        <ion-item>
+          <ion-input type="text" [(ngModel)]="userData.mobile" required></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <button ion-button block class="register-button" (click)="register()">REGISTER</button>
+  <button ion-button block (click)="doFabRegister()"><ion-icon name="logo-facebook"></ion-icon>REGISTER WITH FACEBOOK</button>
+</ion-content>

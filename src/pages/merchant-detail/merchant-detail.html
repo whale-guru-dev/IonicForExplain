@@ -1,0 +1,83 @@
+<!--
+  Generated template for the MerchantDetailPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header no-border no-border>
+    
+    <ion-navbar text-center>
+        <ion-row>
+          <!-- <ion-col> -->
+          <button clear ion-button left (click)="gotoSearch()">
+            <ion-icon name="search"></ion-icon>
+          </button>
+          <!-- </ion-col> -->
+          <!-- <ion-col> -->
+          <ion-title>{{merchant.name}}</ion-title>
+          <!-- </ion-col> -->
+          <!-- <ion-col> -->
+          <button ion-button menuToggle end >
+            <ion-icon name="menu"></ion-icon>
+          </button>
+          <!-- </ion-col> -->
+        </ion-row>
+    </ion-navbar>
+    
+</ion-header>
+
+
+<ion-content text-center>
+    <ion-slides #slider pager="true" autoplay="1000" (ionSlideWillChange)="onSlideChanged()">
+        <ion-slide *ngFor="let slide of slides" class="slide-background">
+          <img [src]="slide.imageUrl">
+          <div class="text-wrapper">
+            <div class="slide-text">
+              <h2 class="slide-title" [innerHTML]="slide.title"></h2><br>
+              <p [innerHTML]="slide.description"></p>
+            </div>
+          </div>
+        </ion-slide>
+    </ion-slides>
+    <ion-grid text-center>
+        <ion-row>
+          <ion-col ><p style="color:aquamarine;">{{merchant.status}}</p></ion-col>
+          <ion-col ><p style="color:black;"> {{merchant.availablefrom}}-{{merchant.availableto}}</p></ion-col>
+
+        </ion-row>
+        <ion-row>
+          <ion-col><h4 style="float:center;">{{merchant.name}}</h4></ion-col>
+        </ion-row>
+        <p style="float:center;color:black;">{{merchant.place}}</p>
+    </ion-grid>
+    <div text-center>
+      <!-- <ion-row> -->
+        <button ion-button class="circle1" clear><ion-icon style="color:#18BA0E;"  name="call"></ion-icon></button>
+        <button ion-button class="circle2" clear><ion-icon style="color:#220CBB;"  name="navigate"></ion-icon></button>
+        <button ion-button class="circle3" clear><ion-icon style="color:#D10909;"  name="bookmark"></ion-icon></button>
+        <button ion-button class="circle4" clear><ion-icon style="color:#E1B105;"  name="brush"></ion-icon></button>
+      <!-- </ion-row> -->
+    </div>
+    <div>
+      <ion-row>
+        <ion-col col-6><h2 style="float:left;">Popular {{merchant.type}}</h2></ion-col>
+        <ion-col col-6><button ion-button clear (click)="seeAll()" style="float:right;color:#F2A207;">See All Merchant ></button></ion-col>
+      </ion-row>
+      <div *ngFor="let popular of populars">
+        <ion-grid>
+          <ion-row>
+            <ion-col col-4><img [src]="popular.imageUrl" width="100px" height="100px"></ion-col>
+            <ion-col col-8>
+              <ion-row>
+                <ion-col col-8><h6 style="float:left;">{{popular.title}}</h6></ion-col>
+                <ion-col col-4><p style="color:aquamarine;float:right;">$ {{popular.price}}</p></ion-col>
+              </ion-row>
+              <ion-row>
+               <p style="color:black;">{{popular.description}}</p>
+              </ion-row>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+    </div>
+</ion-content>

@@ -1,0 +1,52 @@
+page-my-profile {
+
+    .toolbar-background {
+        background-color: #F2A207;
+      }
+
+    img.profile-picture {
+        width: 7em;
+        height: 7em;
+        margin-top: 0.75em;
+        border-radius: 50%;
+    }
+
+    .icon-badge {
+        top: -73px;
+        right: 4px;
+        background: #FFf;
+        color: #06d605;
+        font-size: 12px;
+        position: absolute;
+        padding: 5px 8px;
+        border-radius: 15px;
+    }
+    .profile-info{
+        // height:47%;
+        background-color:#F2A207 !important;
+    }
+    .points {
+        background-color: rgba(0, 0, 0, 0.34);
+        // border: 1px;
+        border: 1px solid;
+    }
+    .transactions {
+        background-color: rgba(0, 0, 0, 0.34);
+        // border: 1px;
+        border: 1px solid;
+   }
+   .credits {
+        background-color: rgba(55, 210, 36, 0.34);
+        // border: 1px;
+        border: 1px solid;
+    }
+    ion-grid {
+        // margin-left:-10% !important;
+        padding:0px !important;
+    }
+    // .grid {width: 120%;}
+    .profile-downline{
+        min-height:53%;
+        background-color: rgb(41, 44, 49);
+    }
+}
